@@ -1,0 +1,17 @@
+#include <iostream>
+
+int withdraw(int balance, int amount) 
+{
+    if (balance >= amount)
+        return balance - amount;
+    return balance;
+}
+
+int main() 
+{
+    int balance = 100, amount = 100;
+    balance = withdraw(balance, amount);
+    std::cout << "Balance after withdraw is: $" << balance << std::endl;
+
+    return 0;
+}
